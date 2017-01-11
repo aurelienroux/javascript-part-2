@@ -5,14 +5,25 @@
 // longest string. Finally, create an array of strings and 
 // try to get it sorted using your new function.
 
-
-function sorting(a, b){
-    return b.length - a.length
-};
-
 var arr = ["Aurelien", "Montreal", "Canada", "js", "html"];
 
 console.log(arr.sort(function(a, b){
     return b.length - a.length;
 }));
+
+// Create an array of objects (don’t need to use new here, 
+// just regular object literals). These objects will contain 
+// a name and email property. Then, run some code that will 
+// sort your array by the longest name. Then, run some code 
+// that will sort your array by e-mail address in 
+// alphabetical order.
+
+
+
+
+
+
+
+
+
 
