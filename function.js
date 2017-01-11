@@ -41,13 +41,30 @@
 // Then, use this function with map on an array of numbers to 
 // check the result.
 
-var numb = [12, 23, 34, 45];
+// var numb = [12, 23, 34, 45];
 
-console.log(numb.map(function(x){
-    return x * x;
-}))
-
-
+// console.log(numb.map(function(x){
+//     return x * x;
+// }))
 
 
 
+// Create a function that can be used with Array.prototype.map. 
+// This function should be able to take an object and square its 
+// “num” property. Then, use this function with map on an array 
+// of objects each containming a “num” property.
+
+var myObj = [
+    {name:"aurelien", num:"1"},
+    {name:"david", num:"2"},
+    {name:"nathan", num:"3"},
+    {name:"adrien", num:"4"}
+]
+
+console.log(
+myObj.map(function(obj){
+    var newObj = {};
+    newObj.name = obj.name;
+    newObj.num = obj.num * obj.num;
+    return newObj;
+}));
