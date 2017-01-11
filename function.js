@@ -5,11 +5,13 @@
 // longest string. Finally, create an array of strings and 
 // try to get it sorted using your new function.
 
-var arr = ["Aurelien", "Montreal", "Canada", "js", "html"];
+// var arr = ["Aurelien", "Montreal", "Canada", "js", "html"];
 
-console.log(arr.sort(function(a, b){
-    return b.length - a.length;
-}));
+// console.log(arr.sort(function(a, b){
+//     return b.length - a.length;
+// }));
+
+
 
 // Create an array of objects (don’t need to use new here, 
 // just regular object literals). These objects will contain 
@@ -18,10 +20,20 @@ console.log(arr.sort(function(a, b){
 // that will sort your array by e-mail address in 
 // alphabetical order.
 
+var arrObj = [
+    {name: "aurelien", email: "aure@me.com"},
+    {name: "david", email: "david@me.com"},
+    {name: "adrien", email:"adrien@me.com"},
+    {name: "nathan", email: "nathan@me.com"}
+]
 
+console.log(arrObj.sort(function(a, b){
+    return a.name.length < b.name.length;
+}))
 
-
-
+console.log(arrObj.sort(function(a, b){
+    return b.email < a.email;
+}))
 
 
 
