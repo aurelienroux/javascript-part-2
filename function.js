@@ -54,17 +54,64 @@
 // “num” property. Then, use this function with map on an array 
 // of objects each containming a “num” property.
 
-var myObj = [
-    {name:"aurelien", num:"1"},
-    {name:"david", num:"2"},
-    {name:"nathan", num:"3"},
-    {name:"adrien", num:"4"}
-]
+// var myObj = [
+//     {name:"aurelien", num:"1"},
+//     {name:"david", num:"2"},
+//     {name:"nathan", num:"3"},
+//     {name:"adrien", num:"4"}
+// ]
 
-console.log(
-myObj.map(function(obj){
-    var newObj = {};
-    newObj.name = obj.name;
-    newObj.num = obj.num * obj.num;
-    return newObj;
-}));
+// console.log(
+// myObj.map(function(obj){
+//     var newObj = {};
+//     newObj.name = obj.name;
+//     newObj.num = obj.num * obj.num;
+//     return newObj;
+// }));
+
+// In a previous workshop, you had to create a function 
+// that took two numbers and an operation (add, sub, mult, …) 
+// and returned the result of the operation on the two numbers. 
+// Here we are going to do the same but at a higher order. 
+// Create a function called operationMaker that takes only 
+// a string called operation as argument. This string 
+// could be “add”, “subtract”, “mult” or “div”.
+
+function operationMaker(operation){
+    if(operation === "add"){
+        return function(a, b){
+            return a + b;
+        }
+    }
+    else if(operation === "subtract"){
+        return function(a, b){
+            return a - b;
+        }
+    }
+    else if(operation === "mult"){
+        return function(a, b){
+            return a * b;
+        }
+    }
+    else if(operation === "div"){
+        return function(a, b){
+            return a / b;
+        }
+    }
+}
+
+var adder = operationMaker("add");
+var sum = adder(5,6);
+console.log(sum);
+
+var subtracter = operationMaker("subtract");
+var minus = subtracter(15,6);
+console.log(minus);
+
+var multi = operationMaker("mult");
+var mtl = multi(5,6);
+console.log(mtl);
+
+var divider = operationMaker("div");
+var div = divider(5,6);
+console.log(div);
