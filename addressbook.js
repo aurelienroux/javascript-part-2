@@ -9,6 +9,11 @@ function Email(address, type){
     this.type = type || "other"
 }
 
-var m = new Email("my address", "home");
+Person.prototype.addEmail = function(email, type){
+    this.email.push(new Email(email,type))
+}
 
-console.log(m)
+var Aure = new Person("Aurelien", "Roux");
+Aure.addEmail("aureroux@me.com", "home")
+
+console.log(Aure);
