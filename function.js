@@ -20,19 +20,31 @@
 // that will sort your array by e-mail address in 
 // alphabetical order.
 
-var arrObj = [
-    {name: "aurelien", email: "aure@me.com"},
-    {name: "david", email: "david@me.com"},
-    {name: "adrien", email:"adrien@me.com"},
-    {name: "nathan", email: "nathan@me.com"}
-]
+// var arrObj = [
+//     {name: "aurelien", email: "aure@me.com"},
+//     {name: "david", email: "david@me.com"},
+//     {name: "adrien", email:"adrien@me.com"},
+//     {name: "nathan", email: "nathan@me.com"}
+// ]
 
-console.log(arrObj.sort(function(a, b){
-    return a.name.length < b.name.length;
-}))
+// console.log(arrObj.sort(function(a, b){
+//     return a.name.length < b.name.length;
+// }))
 
-console.log(arrObj.sort(function(a, b){
-    return b.email < a.email;
+// console.log(arrObj.sort(function(a, b){
+//     return b.email < a.email;
+// }))
+
+
+// Create a function that can be used with Array.prototype.map. 
+// This function should take a number and return its square. 
+// Then, use this function with map on an array of numbers to 
+// check the result.
+
+var numb = [12, 23, 34, 45];
+
+console.log(numb.map(function(x){
+    return x * x;
 }))
 
 
