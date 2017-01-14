@@ -13,7 +13,7 @@
 
 // //REFACTOR *****************************************
 // function sorting(arr){
-//     return arr.sort( (a, b) => b.length - a. length);
+//     return arr.sort( (a, b) => b.length - a.length);
 // }
 
 // console.log(sorting(arr));
@@ -43,7 +43,17 @@
 //     return b.email < a.email;
 // }))
 
+//REFACTOR********************************
 
+// function sorting(arr){
+//     return arr.sort( (a, b) => b.name.length - a.name.length);
+// // }
+
+// function sorting(arr){
+//     return arr.sort( (a, b) => b.email.length - a.email.length);
+// }
+
+// console.log(sorting(arrObj));
 
 
 
