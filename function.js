@@ -98,6 +98,13 @@
 //     return newObj;
 // }));
 
+//REFACTOR *************************************
+// function mapping(arr){
+//     return arr.map( ele => ele.num * ele.num);
+// }
+
+// console.log(mapping(myObj));
+
 
 
 
