@@ -68,6 +68,12 @@
 //     return x * x;
 // }))
 
+//REFACTOR ***********************************
+// function mapping(arr){
+//     return arr.map( ele => ele * ele);
+// }
+
+// console.log(mapping(numb));
 
 
 
