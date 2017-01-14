@@ -11,6 +11,13 @@
 //     return b.length - a.length;
 // }));
 
+// //REFACTOR *****************************************
+// function sorting(arr){
+//     return arr.sort( (a, b) => b.length - a. length);
+// }
+
+// console.log(sorting(arr));
+
 
 
 
